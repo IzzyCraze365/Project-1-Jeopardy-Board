@@ -1,0 +1,14 @@
+/* CSS Week 1 - Project */
+/* Jeopardy! Project  */
+
+/* imports the other style sheets */
+
+@import "setup.css";
+@import "styles.css";
+@import "grid.css";
+
+
+/* this is the only CSS imported into index.html */
+/* this is the only CSS imported into round-1.html */
+/* this is the only CSS imported into round-1.html */
+/* this is the only CSS imported into final-jeopardy.html */

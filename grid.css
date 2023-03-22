@@ -1,0 +1,179 @@
+/* CSS Week 1 - Project */
+/* Jeopardy! Project  */
+
+/*! Organizing the Various Grids  */
+
+/* Classes */
+.container {
+  display: grid;
+  grid-template-columns: 1fr; /* Repeating option to make a full grid */
+  gap: 10px;
+  grid-template-areas: /* this is how you organize your website */
+    "header" /* found in styles.css */
+    "logo" /* found in styles.css */
+    "player" /* found in styles.css */
+    "catergory" /*! look below */
+    "question" /*! look below */
+    "finalQuestion" /* found in styles.css */
+    "userInput" /* found in styles.css */
+    "button" /* found in styles.css along with button.hovor*/
+    "score" /*! look below */
+    "nextRound" /* found in styles.css along with button.hovor*/
+    "footer"; /* found in styles.css along with button.hovor*/
+}
+
+
+/* Catergories are organized in their own seperate Grid */
+.catergory {
+/*  grid-area: catergory;
+  grid-template-columns: auto; */
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  text-align: center;
+  grid-template-areas: /* this is how you organize your website */ "catergory1 catergory2 catergory3 catergory4 catergory5 catergory6";
+  background-color: grey;
+}
+.catergory1 {
+  grid-area: catergory1;
+}
+.catergory2 {
+  grid-area: catergory2;
+}
+.catergory3 {
+  grid-area: catergory3;
+}
+.catergory4 {
+  grid-area: catergory4;
+}
+.catergory5 {
+  grid-area: catergory5;
+}
+.catergory6 {
+  grid-area: catergory6;
+}
+
+
+/* Questions are organized in their own seperate Grid */
+.question {
+  grid-area: question;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  text-align: center;
+  grid-template-areas: /* this is how you organize your website */ 
+  "question1_1 question1_2 question1_3 question1_4 question1_5 question1_6"
+  "question2_1 question2_2 question2_3 question2_4 question2_5 question2_6"
+  "question3_1 question3_2 question3_3 question3_4 question3_5 question3_6"
+  "question4_1 question4_2 question4_3 question4_4 question4_5 question4_6"
+  "question5_1 question5_2 question5_3 question5_4 question5_5 question5_6";
+  background-color: grey;
+}
+.question1_1 {
+  grid-area: question1_1;
+}
+.question1_2 {
+  grid-area: question1_2;
+}
+.question1_3 {
+  grid-area: question1_3;
+}
+.question1_4 {
+  grid-area: question1_4;
+}
+.question1_5 {
+  grid-area: question1_5;
+}
+.question1_6 {
+  grid-area: question1_6;
+}
+.question2_1 {
+  grid-area: question2_1;
+}
+.question2_2 {
+  grid-area: question2_2;
+}
+.question2_3 {
+  grid-area: question2_3;
+}
+.question2_4 {
+  grid-area: question2_4;
+}
+.question2_5 {
+  grid-area: question2_5;
+}
+.question2_6 {
+  grid-area: question2_6;
+}
+.question3_1 {
+  grid-area: question3_1;
+}
+.question3_2 {
+  grid-area: question3_2;
+}
+.question3_3 {
+  grid-area: question3_3;
+}
+.question3_4 {
+  grid-area: question3_4;
+}
+.question3_5 {
+  grid-area: question3_5;
+}
+.question3_6 {
+  grid-area: question3_6;
+}
+.question4_1 {
+  grid-area: question4_1;
+}
+.question4_2 {
+  grid-area: question4_2;
+}
+.question4_3 {
+  grid-area: question4_3;
+}
+.question4_4 {
+  grid-area: question4_4;
+}
+.question4_5 {
+  grid-area: question4_5;
+}
+.question4_6 {
+  grid-area: question4_6;
+}
+.question5_1 {
+  grid-area: question5_1;
+}
+.question5_2 {
+  grid-area: question5_2;
+}
+.question5_3 {
+  grid-area: question5_3;
+}
+.question5_4 {
+  grid-area: question5_4;
+}
+.question5_5 {
+  grid-area: question5_5;
+}
+.question5_6 {
+  grid-area: question5_6;
+}
+
+.score{
+  grid-area: score;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  grid-template-areas: "score1 score2";
+}
+
+.score1{
+  grid-area: score1;
+  text-align: left;
+}
+
+.score2{
+  grid-area: score2;
+  text-align: right;
+}

@@ -1,0 +1,25 @@
+/* CSS Week 1 - Project */
+/* Jeopardy! Project  */
+
+/* imported into index.css */
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* CSS Variables */
+  :root {
+    --primary: white; /* uses this variable when called in CSS */
+    --textColor1: Black;
+    --textColor2: white;
+    --primaryHover: burlywood; /* uses this variable when called in CSS */
+    --background: grey; /* uses this variable when called in CSS */
+    --backgroundHover: pink; /* uses this variable when called in CSS */
+  }
+
+body{
+    background-color: lightblue;
+}
+
+

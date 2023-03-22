@@ -1,0 +1,126 @@
+/* CSS Week 1 - Project */
+/* Jeopardy! Project  */
+
+
+img {
+  padding-top: 20px;
+  max-width: 80%;
+  height: auto;
+}
+
+/* Classes in Alphabetical Order */
+.box {
+  font-family: "Delicious Handrawn", cursive;
+  background-color: var(--background);
+  color: var(--primary);
+  padding: 20px;
+  font-size: 150%;
+  border: 5px solid black;
+}
+
+.button {
+  display: inline-block;
+  margin: 15px 50px;
+  background-color: gold;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 4px;
+  color: black;
+  font-size: 30px;
+  border: solid black 5px;
+  text-decoration: none;
+}
+.button:hover {
+  color: yellow;
+  background-color: black;
+  font-size: 2rem;
+}
+
+/* for "catergory" class see grid.css */
+/*! for "container" class see grid.css */
+
+.finalQuestion{
+  grid-area: finalQuestion;
+  text-align: center;
+}
+
+.flex-container > div {
+  /*targets each div*/
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+  color: black;
+  font-size: 1rem;
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+  color: black;
+  font-size: 5rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Images & Pictures */
+.logo {
+  grid-area: logo;
+  height: 100%;
+  align-content: center;
+  text-align: center;
+  color: var(--textColor2);
+  font-size: 5em;
+  background: black;
+}
+.logo:hover {
+  color: red;
+  background-color: grey;
+}
+
+.nextRound {
+  grid-area: nextRound;
+}
+
+
+.player {
+  grid-area: player;
+  text-align: center;
+  color: black;
+  font-size: 3rem;
+}
+
+/*! for "question" class see grid.css */
+/* for "score" class see grid.css */
+
+.userInput{
+  grid-area: userInput;
+  text-align: center;
+}
+
+/* presently not needed */
+/* .photoGallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+      "photo1 photo2 photo3"
+      "photo4 photo5 photo6";
+    height: 100%;
+    align-content: center;
+  }
+  .photo1 {
+    grid-area: photo1;
+    background-color: yellow;
+    text-align: center;
+    color: black;
+  }
+  .photo1:hover {
+    color: yellow;
+    background-color: black;
+    font-size: 2rem;
+  } */
