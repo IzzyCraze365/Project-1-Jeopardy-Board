@@ -1,6 +1,7 @@
 /* CSS Week 1 - Project */
 /* Jeopardy! Project  */
 
+/* TODO imported into index.css */
 
 img {
   padding-top: 20px;
@@ -8,42 +9,127 @@ img {
   height: auto;
 }
 
-/* Classes in Alphabetical Order */
+/*! Classes in Alphabetical Order */
+/* "answer" class is used for the Guess, Pass & Wager Buttons */
+.answer {
+  grid-area: button;
+  display: inline-flex;
+  margin: 15px 10px;
+  background-color: var(--buttonBackground);
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+  color: var(--buttonColor);
+  font-size: 30px;
+  border: solid 5px;
+  border-color: var(--borderColor);
+  text-decoration: none;
+  justify-content: center;
+  text-align: center;
+}
+/* "answer:hover" provides a color change when an answer is selected */
+.answer:hover {
+  color: var(--primaryHover);
+  background-color: var(--backgroundHover);
+}
+
+/* "answers" class is the container that holds the answers, so they stay organized on the webpage  */
+.answers {
+  grid-area: answers;
+  display: inline-flex;
+  margin: 15px 10px;
+  text-decoration: none;
+  justify-content: center;
+  text-align: center;
+}
+
+/* "bet" class for the Free Text area in Final Round */
+.bet {
+  grid-area: bet;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--textColor1);
+  padding: 5px 10px;
+  font-family: "Delicious Handrawn", cursive;
+  font-size: 150%;
+}
+
+/* !"box" is used everywhere, almost everything has a box class */
 .box {
   font-family: "Delicious Handrawn", cursive;
   background-color: var(--background);
   color: var(--primary);
-  padding: 20px;
+  padding: 0px;
   font-size: 150%;
-  border: 5px solid black;
+  border: 2px solid;
+  border-color: var(--borderColor);
 }
 
+/* "button" class is used for page navigation, moving from 1 round to the next */
 .button {
-  display: inline-block;
-  margin: 15px 50px;
-  background-color: gold;
+  grid-area: button;
+  display: inline-flex;
+  margin: 15px 10px;
+  color: var(--buttonColor);
+  background-color: var(--buttonBackground);
+  border: solid 5px;
+  border-color: var(--borderColor);
   padding-left: 30px;
   padding-right: 30px;
-  border-radius: 4px;
-  color: black;
+  border-radius: 20px;
   font-size: 30px;
-  border: solid black 5px;
   text-decoration: none;
-}
-.button:hover {
-  color: yellow;
-  background-color: black;
-  font-size: 2rem;
+  margin: 0 20px;
 }
 
-/* for "catergory" class see grid.css */
+/* "button:hover" shows when a button is selected */
+.button:hover {
+  color: var(--primaryHover);
+  background-color: var(--backgroundHover);
+}
+
+/*! for "catergory" class see grid.css */
 /*! for "container" class see grid.css */
 
-.finalQuestion{
-  grid-area: finalQuestion;
+/* "finalJeopardy" class is a container for the final Catergory & Question */
+.finalJeopardy {
+  grid-area: finalJeopardy;
   text-align: center;
 }
 
+/* "finalCatergory" class is for the Catergory in the Final Round */
+.finalCatergory {
+  grid-area: finalCatergory;
+  font-size: 3rem;
+  height: fit-content;
+  font-size: 8rem;
+  color: var(--buttonColor);
+  background-color: var(--buttonBackground);
+  border: solid 5px;
+  border-color: var(--borderColor);
+  border-radius: 30px 30px 30px 30px;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+/* "finalQuestion" class is for the Question in the Final Round */
+.finalQuestion {
+  grid-area: finalQuestion;
+  height: fit-content;
+  font-size: 8rem;
+  display: inline-flex;
+  color: var(--buttonColor);
+  background-color: var(--buttonBackground);
+  border: solid 5px;
+  border-color: var(--borderColor);
+  border-radius: 0 0 30px 30px;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+/* TODO I did not use this class*/
 .flex-container > div {
   /*targets each div*/
   padding: 10px;
@@ -51,76 +137,93 @@ img {
   font-size: 2em;
 }
 
+/* "footer" class is used on the footer in each page */
 .footer {
   grid-area: footer;
+  display: flexbox;
   text-align: center;
-  color: black;
+  color: var(--textColor1);
   font-size: 1rem;
+  margin: 10px;
 }
 
+/* "header" class is used on the header in each page */
 .header {
   grid-area: header;
   text-align: center;
-  color: black;
+  color: var(--textColor1);
   font-size: 5rem;
   font-weight: bold;
   text-decoration: underline;
 }
 
-/* Images & Pictures */
+/* "jeopardyBoard" class is a container for the "catergory" & "question" classes */
+/* TODO currently not used, but useful to have in reserve*/
+.jeopardyBoard {
+}
+
+/* "links" class is a container for the button class that moves the navigation */
+.links {
+  grid-area: links;
+  justify-content: center;
+  text-align: center;
+}
+
+/* "logo" class is for the image on the Landing Page */
 .logo {
   grid-area: logo;
   height: 100%;
   align-content: center;
   text-align: center;
-  color: var(--textColor2);
-  font-size: 5em;
-  background: black;
+  font-size: 3em;
+  color: var(--textColor1);
+  font-family: "Delicious Handrawn", cursive;
+  font-weight: bolder;
 }
+/* "logo:hover" shows when the logo is selected */
 .logo:hover {
-  color: red;
-  background-color: grey;
+  color: var(--questionColor);
+  background-color: var(--background);
 }
 
+/* "nextRound" class is a container for the "links" class */
+/* TODO currently not used, but useful to have in reserve */
 .nextRound {
   grid-area: nextRound;
 }
 
-
+/* "player" class to keep track of the active players turn on each page */
+/* TODO no functionality at the moment */
 .player {
   grid-area: player;
   text-align: center;
-  color: black;
+  color: vars(--textColor1);
   font-size: 3rem;
 }
 
-/*! for "question" class see grid.css */
-/* for "score" class see grid.css */
-
-.userInput{
-  grid-area: userInput;
-  text-align: center;
+/* "points" class to color the question boxes */
+.points {
+  color: var(--questionColor);
+  background-color: var(--questionBackground);
+}
+/* "points:hover" class to color the question boxes when selected */
+.points:hover {
+  color: var(--primaryHover);
+  background-color: var(--backgroundHover);
 }
 
-/* presently not needed */
-/* .photoGallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    grid-template-areas:
-      "photo1 photo2 photo3"
-      "photo4 photo5 photo6";
-    height: 100%;
-    align-content: center;
-  }
-  .photo1 {
-    grid-area: photo1;
-    background-color: yellow;
-    text-align: center;
-    color: black;
-  }
-  .photo1:hover {
-    color: yellow;
-    background-color: black;
-    font-size: 2rem;
-  } */
+/*! for "question" class see grid.css */
+/*! for "score" class see grid.css */
+
+/* "userInput" class for the Free Text area in each Round */
+.userInput {
+  grid-area: userInput;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--textColor1);
+  padding: 5px 10px;
+  font-family: "Delicious Handrawn", cursive;
+  font-size: 150%;
+}

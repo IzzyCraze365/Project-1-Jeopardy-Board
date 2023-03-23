@@ -8,8 +8,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Final Jeopardy</title>
-    <!-- Boot Strap reference link  "paste link into head of html"-->
+    <title>Jeopardy: Final Round</title>
+    <!-- Boot Strap reference link  "paste link into head of html" -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,25 +20,65 @@
     <!-- Linked to CSS -->
   </head>
   <body>
-    <h1>Final Jeopardy</h1>
+    <h1 class="text-center">Jeopardy: Final Round</h1>
     <!-- Do not change the script source. Allows import/export to work. -->
     <script src="./scripts/index.js" type="module"></script>
     <!-- I added the lines below here -->
     <div class="container">
-      <div class="box header">Final Round</div>
-      <div class="box sidebar">Sidebar</div>
-      <div class="box sidebar2">Sidebar 2</div>
-      <div class="box content">
-        Content <br />
-        More Content here...
+      <div class="box header">Final Jeopardy</div>
+      <!--TODO This will need to change to say the current player's turn -->
+      <div class="player">Player 1's Turn</div>
+      <div class="finalJeopardy">
+        <div class="box finalCatergory">Final Catergory</div>
+        <div class="box points finalQuestion">FINAL QUESTION</div>
       </div>
-      <nav class="links">
-        <a href="index.html" class="button">Landing Page</a>
-        <a href="round-1.html" class="button">First Round Page</a>
-        <a href="round-2.html" class="button">Second Round Page</a>
-        <a href="final-jeopardy.html" class="button">Final Round Page</a>
-      </nav>
-      <div class="box footer">Footer</div>
+      <div class="bet">
+        <label>Place your Wager:</label>
+
+        <input
+          type="text"
+          required
+          minlength="1"
+          maxlength="8"
+          size="10"
+          placeholder="Willing to lose $?"
+        />
+      </div>
+      <div class="userInput">
+        <label>Final Answer:</label>
+        <input
+          type="text"
+          required
+          minlength="1"
+          maxlength="100"
+          size="10"
+          placeholder="Final Answer..."
+        />
+      </div>
+      <div class="answers">
+        <div class="answer">Wager Amount</div>
+      </div>
+
+      <div class="score">
+        <!-- TODO This will need to update to reflect each Player's Score -->
+        <div class="row">
+          <div class="score1 col-lg-6">Player 1's Score: 0</div>
+          <div class="score2 col-lg-6">Player 2's Score: 0</div>
+        </div>
+      </div>
+
+      <!-- Next Round Buttons -->
+      <div class="nextRound">
+        <nav class="links">
+          <a href="round-2.html" class="button">Previous Round</a>
+          <a href="index.html" class="button">Play Again</a>
+        </nav>
+      </div>
+      <div class="box footer">
+        Welcome to Jeopardy.com, home of America's Favorite Quiz Show <br />
+        Working in conjunction with Upright Education <br />
+        and the Angry Coder Named John Foundation
+      </div>
     </div>
     <!-- Bootstrap Javascript "last script to be accessed by website - LAST THING IN BODY OF HTML" -->
     <script

@@ -1,12 +1,11 @@
 /* CSS Week 1 - Project */
 /* Jeopardy! Project  */
 
-/* imports the other style sheets */
+/* TODO This sheet imports the other style sheets into HTML*/
 
 @import "setup.css";
 @import "styles.css";
 @import "grid.css";
-
 
 /* this is the only CSS imported into index.html */
 /* this is the only CSS imported into round-1.html */

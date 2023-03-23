@@ -1,25 +1,32 @@
 /* CSS Week 1 - Project */
 /* Jeopardy! Project  */
 
-/* imported into index.css */
+/* TODO imported into index.css */
 
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* CSS Variables */
-  :root {
-    --primary: white; /* uses this variable when called in CSS */
-    --textColor1: Black;
-    --textColor2: white;
-    --primaryHover: burlywood; /* uses this variable when called in CSS */
-    --background: grey; /* uses this variable when called in CSS */
-    --backgroundHover: pink; /* uses this variable when called in CSS */
-  }
-
-body{
-    background-color: lightblue;
+  margin: 0;
+  padding: 0;
 }
 
+/* CSS Variables */
+/* uses this variable when called in CSS */
 
+/* TODO Change the Color Scheme of the Website */
+:root {
+  --primary: white; /* default color for all items within the Box */
+  --background: grey; /* default background color for all items within the Box & logo*/
+  --borderColor: Black; /*boarder for boxes and buttons */
+  --textColor1: Black; /*color for words in header, footers and general colors*/
+  --textColor2: white; /* ! unused */
+  --buttonColor: blue; /* color for text inside buttons */
+  --buttonBackground: grey; /* background color for text inside buttons */
+  --primaryHover: purple; /* color for text inside buttons when they are about to be selected */
+  --backgroundHover: gold; /* background color for the buttons when they are selected */
+  --questionColor: yellow; /* color for text inside questions */
+  --questionBackground: navy; /* background color for questions */
+  --websiteBody: lightskyblue; /* general website background color */
+}
+
+body {
+  background-color: var(--websiteBody);
+}

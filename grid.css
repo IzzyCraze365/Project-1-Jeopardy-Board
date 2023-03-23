@@ -1,40 +1,43 @@
 /* CSS Week 1 - Project */
 /* Jeopardy! Project  */
 
+/* TODO imported into index.css */
+
 /*! Organizing the Various Grids  */
 
 /* Classes */
+/* This is the general Order Each Web Page will follow from top to bottom */
 .container {
   display: grid;
   grid-template-columns: 1fr; /* Repeating option to make a full grid */
   gap: 10px;
   grid-template-areas: /* this is how you organize your website */
     "header" /* found in styles.css */
-    "logo" /* found in styles.css */
     "player" /* found in styles.css */
+    "logo" /* found in styles.css */
     "catergory" /*! look below */
     "question" /*! look below */
-    "finalQuestion" /* found in styles.css */
+    "finalJeopardy" /* found in styles.css */
+    "bet" /* found in styles.css */
     "userInput" /* found in styles.css */
-    "button" /* found in styles.css along with button.hovor*/
+    "answers" /* found in styles.css */
     "score" /*! look below */
+    "links" /* found in styles.css along with button.hovor*/
     "nextRound" /* found in styles.css along with button.hovor*/
     "footer"; /* found in styles.css along with button.hovor*/
 }
 
-
 /* Catergories are organized in their own seperate Grid */
 .catergory {
-/*  grid-area: catergory;
-  grid-template-columns: auto; */
   text-align: center;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /* 6 equal columns */
+  gap: 1px;
   text-align: center;
-  grid-template-areas: /* this is how you organize your website */ "catergory1 catergory2 catergory3 catergory4 catergory5 catergory6";
-  background-color: grey;
+  grid-template-areas: /* this is how you organize your website into a grid */ "catergory1 catergory2 catergory3 catergory4 catergory5 catergory6";
+  background-color: var(--background);
 }
+/* Each catergory Class (below) ius being called by the grid-template-area (above) */
 .catergory1 {
   grid-area: catergory1;
 }
@@ -54,22 +57,22 @@
   grid-area: catergory6;
 }
 
-
 /* Questions are organized in their own seperate Grid */
 .question {
   grid-area: question;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /* 6 equal columns */
+  gap: 1px;
   text-align: center;
-  grid-template-areas: /* this is how you organize your website */ 
-  "question1_1 question1_2 question1_3 question1_4 question1_5 question1_6"
-  "question2_1 question2_2 question2_3 question2_4 question2_5 question2_6"
-  "question3_1 question3_2 question3_3 question3_4 question3_5 question3_6"
-  "question4_1 question4_2 question4_3 question4_4 question4_5 question4_6"
-  "question5_1 question5_2 question5_3 question5_4 question5_5 question5_6";
-  background-color: grey;
+  grid-template-areas: /* this is how you organize your website into a grid */
+    "question1_1 question1_2 question1_3 question1_4 question1_5 question1_6"
+    "question2_1 question2_2 question2_3 question2_4 question2_5 question2_6"
+    "question3_1 question3_2 question3_3 question3_4 question3_5 question3_6"
+    "question4_1 question4_2 question4_3 question4_4 question4_5 question4_6"
+    "question5_1 question5_2 question5_3 question5_4 question5_5 question5_6";
+  background-color: var(--background);
 }
+/* Each question Class (below) ius being called by the grid-template-area (above) */
 .question1_1 {
   grid-area: question1_1;
 }
@@ -161,19 +164,30 @@
   grid-area: question5_6;
 }
 
-.score{
+/* Scores are organized in their own seperate Grid */
+.score {
   grid-area: score;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* 2 equal columns */
   gap: 10px;
   grid-template-areas: "score1 score2";
+  justify-content: center;
 }
-
-.score1{
+/* Each score Class (below) ius being called by the grid-template-area (above) */
+.score1 {
+  display: flex;
   grid-area: score1;
-  text-align: left;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--textColor1);
+  background-color: var(--textColor2);
 }
-
-.score2{
+.score2 {
+  display: flex;
   grid-area: score2;
-  text-align: right;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--textColor2);
+  background-color: var(--textColor1);
 }

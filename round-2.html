@@ -9,37 +9,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jeopardy: Round 2</title>
-    <!-- Boot Strap reference link  "paste link into head of html"-->
+    <!-- Boot Strap reference link  "paste link into head of html" -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <script src="./scripts/index.js" type="module"></script>
     <link rel="stylesheet" href="index.css" />
     <!-- Linked to CSS -->
   </head>
   <body>
-    <h1>Round Two</h1>
+    <h1 class="text-center">Jeopardy: Round 2</h1>
     <!-- Do not change the script source. Allows import/export to work. -->
     <script src="./scripts/index.js" type="module"></script>
     <!-- I added the lines below here -->
     <div class="container">
-      <div class="box header">Final Round</div>
-      <div class="box sidebar">Sidebar</div>
-      <div class="box sidebar2">Sidebar 2</div>
-      <div class="box content">
-        Content <br />
-        More Content here...
+      <div class="box header">Second Round</div>
+      <div class="player">Player 1's Turn</div>
+      <!--TODO This will need to change to say the current player's turn -->
+      <div class="jeopardyBoard">
+        <div class="box catergory">
+          <!-- Makes the row of Catergories -->
+          <div class="box catergory1">Catergory</div>
+          <div class="box catergory2">Catergory</div>
+          <div class="box catergory3">Catergory</div>
+          <div class="box catergory4">Catergory</div>
+          <div class="box catergory5">Catergory</div>
+          <div class="box catergory6">Catergory</div>
+        </div>
+        <div class="box question">
+          <!-- Makes the Grid for the Questions -->
+          <div class="box question1_1 points">200</div>
+          <div class="box question1_2 points">200</div>
+          <div class="box question1_3 points">200</div>
+          <div class="box question1_4 points">200</div>
+          <div class="box question1_5 points">200</div>
+          <div class="box question1_6 points">200</div>
+          <div class="box question2_1 points">400</div>
+          <div class="box question2_2 points">400</div>
+          <div class="box question2_3 points">400</div>
+          <div class="box question2_4 points">400</div>
+          <div class="box question2_5 points">400</div>
+          <div class="box question2_6 points">400</div>
+          <div class="box question3_1 points">600</div>
+          <div class="box question3_2 points">600</div>
+          <div class="box question3_3 points">600</div>
+          <div class="box question3_4 points">600</div>
+          <div class="box question3_5 points">600</div>
+          <div class="box question3_6 points">600</div>
+          <div class="box question4_1 points">800</div>
+          <div class="box question4_2 points">800</div>
+          <div class="box question4_3 points">800</div>
+          <div class="box question4_4 points">800</div>
+          <div class="box question4_5 points">800</div>
+          <div class="box question4_6 points">800</div>
+          <div class="box question5_1 points">1000</div>
+          <div class="box question5_2 points">1000</div>
+          <div class="box question5_3 points">1000</div>
+          <div class="box question5_4 points">1000</div>
+          <div class="box question5_5 points">1000</div>
+          <div class="box question5_6 points">1000</div>
+        </div>
       </div>
-      <nav class="links">
-        <a href="index.html" class="button">Landing Page</a>
-        <a href="round-1.html" class="button">First Round Page</a>
-        <a href="round-2.html" class="button">Second Round Page</a>
-        <a href="final-jeopardy.html" class="button">Final Round Page</a>
-      </nav>
-      <div class="box footer">Footer</div>
+      <div class="userInput">
+        <label>Answer Here:</label>
+        <!-- This code allows the player to input an answer -->
+        <input
+          type="text"
+          required
+          minlength="1"
+          maxlength="20"
+          size="10"
+          placeholder="Answer Here"
+        />
+      </div>
+
+      <div class="answers">
+        <!-- Selector Buttons -->
+        <div class="answer">Guess Button</div>
+        <div class="answer">Pass Button</div>
+      </div>
+
+      <div class="score">
+        <!-- TODO This will need to update to reflect each Player's Score -->
+        <div class="row">
+          <div class="score1 col-lg-6">Player 1's Score: 0</div>
+          <div class="score2 col-lg-6">Player 2's Score: 0</div>
+        </div>
+      </div>
+
+      <!-- Next Round Buttons -->
+      <div class="nextRound">
+        <nav class="links">
+          <a href="round-1.html" class="button">Previous Round</a>
+          <a href="final-jeopardy.html" class="button">Final Round</a>
+        </nav>
+      </div>
+      <div class="box footer">
+        Welcome to Jeopardy.com, home of America's Favorite Quiz Show <br />
+        Working in conjunction with Upright Education <br />
+        and the Angry Coder Named John Foundation
+      </div>
     </div>
     <!-- Bootstrap Javascript "last script to be accessed by website - LAST THING IN BODY OF HTML" -->
     <script
