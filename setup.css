@@ -11,7 +11,8 @@
 /* CSS Variables */
 /* uses this variable when called in CSS */
 
-/* TODO Change the Color Scheme of the Website */
+/* TODO ICEBOX: Create your own theme for your site. */
+/* Change the Color Scheme of the Website */
 /*! aka the "Variable Color Charrt" */
 :root {
   --primary: white; /* default color for all items within the Box */
@@ -55,6 +56,7 @@ container
 finalJeopardy
 finalCatergory
 finalQuestion
+flip
 footer
 header
 links
@@ -96,6 +98,7 @@ row
 score
 score1
 score2
+spin
 text-center
 tub
 userInput */

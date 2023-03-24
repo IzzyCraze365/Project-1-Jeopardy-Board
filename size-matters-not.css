@@ -5,6 +5,8 @@
 
 /* This code changes the properties of the website as the display screen gets smaller */
 
+/* TODO ICEBOX: Make the site fully mobile responsive. */
+
 @media screen and (max-width: 1024px) {
   body {
     background-color: var(--websiteBody2);

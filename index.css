@@ -15,6 +15,9 @@
 /* Controls the Website parameters as the Screen Size changes  */
 @import "size-matters-not.css";
 
+/* Adds some fun FX to the site  */
+@import "animation.css";
+
 /* this is the only CSS imported into index.html */
 /* this is the only CSS imported into round-1.html */
 /* this is the only CSS imported into round-1.html */

@@ -130,6 +130,8 @@ img {
   overflow: hidden;
 }
 
+/*! for "flip" class see animation.css */
+
 /* TODO I did not use this class*/
 .flex-container > div {
   /*targets each div*/
@@ -182,11 +184,15 @@ img {
   color: var(--textColor1);
   font-family: "Delicious Handrawn", cursive;
   font-weight: bolder;
+  margin: 0 10%;
 }
 /* "logo:hover" shows when the logo is selected */
 .logo:hover {
   color: var(--questionColor);
   background-color: var(--background);
+  border: solid 1px;
+  border-color: var(--borderColor);
+  border-radius: 25px;
 }
 
 /* "nextRound" class is a container for the "links" class */
@@ -218,6 +224,8 @@ img {
 
 /*! for "question" class see grid.css */
 /*! for "score" class see grid.css */
+
+/*! for "spin" class see animation.css */
 
 /* "userInput" class for the Free Text area in each Round */
 .userInput {

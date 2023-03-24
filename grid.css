@@ -86,8 +86,11 @@
     "question3_1 question3_2 question3_3 question3_4 question3_5 question3_6"
     "question4_1 question4_2 question4_3 question4_4 question4_5 question4_6"
     "question5_1 question5_2 question5_3 question5_4 question5_5 question5_6";
-  background-color: var(--background);
+  /* background-color: var(--questionBackground); */
   margin: 0 10%;
+}
+.question:hover {
+  background-color: var(--questionBackground);
 }
 /* Each question Class (below) ius being called by the grid-template-area (above) */
 .question1_1 {
