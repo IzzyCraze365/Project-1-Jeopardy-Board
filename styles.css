@@ -20,7 +20,7 @@ img {
   padding-right: 30px;
   border-radius: 20px;
   color: var(--buttonColor);
-  font-size: 30px;
+  font-size: 2em;
   border: solid 5px;
   border-color: var(--borderColor);
   text-decoration: none;
@@ -53,7 +53,7 @@ img {
   color: var(--textColor1);
   padding: 5px 10px;
   font-family: "Delicious Handrawn", cursive;
-  font-size: 150%;
+  font-size: 2em;
 }
 
 /* !"box" is used everywhere, almost everything has a box class */
@@ -62,7 +62,7 @@ img {
   background-color: var(--background);
   color: var(--primary);
   padding: 0px;
-  font-size: 150%;
+  font-size: 1em;
   border: 2px solid;
   border-color: var(--borderColor);
 }
@@ -71,17 +71,16 @@ img {
 .button {
   grid-area: button;
   display: inline-flex;
-  margin: 15px 10px;
   color: var(--buttonColor);
   background-color: var(--buttonBackground);
   border: solid 5px;
   border-color: var(--borderColor);
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
   border-radius: 20px;
-  font-size: 30px;
+  font-size: 2em;
   text-decoration: none;
-  margin: 0 20px;
+  margin: 5px 20px;
 }
 
 /* "button:hover" shows when a button is selected */
@@ -102,39 +101,41 @@ img {
 /* "finalCatergory" class is for the Catergory in the Final Round */
 .finalCatergory {
   grid-area: finalCatergory;
-  font-size: 3rem;
   height: fit-content;
-  font-size: 8rem;
+  font-size: 6em;
   color: var(--buttonColor);
   background-color: var(--buttonBackground);
   border: solid 5px;
   border-color: var(--borderColor);
-  border-radius: 30px 30px 30px 30px;
+  border-radius: 30px 30px 0px 0px;
   text-decoration: none;
-  margin: 0 20px;
+  margin: 0 10%;
+  overflow: hidden;
 }
 
 /* "finalQuestion" class is for the Question in the Final Round */
 .finalQuestion {
   grid-area: finalQuestion;
-  height: fit-content;
-  font-size: 8rem;
-  display: inline-flex;
+  min-height: 4em;
+  font-size: 6em;
+  padding: 5%;
+  text-justify: center;
   color: var(--buttonColor);
   background-color: var(--buttonBackground);
   border: solid 5px;
   border-color: var(--borderColor);
   border-radius: 0 0 30px 30px;
   text-decoration: none;
-  margin: 0 20px;
+  margin: 0 10%;
+  overflow: hidden;
 }
 
 /* TODO I did not use this class*/
 .flex-container > div {
   /*targets each div*/
-  padding: 10px;
+  /* padding: 10px;
   text-align: center;
-  font-size: 2em;
+  font-size: 2em; */
 }
 
 /* "footer" class is used on the footer in each page */
@@ -143,8 +144,8 @@ img {
   display: flexbox;
   text-align: center;
   color: var(--textColor1);
-  font-size: 1rem;
-  margin: 10px;
+  font-size: 1em;
+  margin: 10%;
 }
 
 /* "header" class is used on the header in each page */
@@ -152,9 +153,10 @@ img {
   grid-area: header;
   text-align: center;
   color: var(--textColor1);
-  font-size: 5rem;
+  font-size: 5em;
   font-weight: bold;
   text-decoration: underline;
+  margin: 0 10%;
 }
 
 /* "jeopardyBoard" class is a container for the "catergory" & "question" classes */
@@ -167,6 +169,7 @@ img {
   grid-area: links;
   justify-content: center;
   text-align: center;
+  margin: 0 10%;
 }
 
 /* "logo" class is for the image on the Landing Page */
@@ -198,7 +201,8 @@ img {
   grid-area: player;
   text-align: center;
   color: vars(--textColor1);
-  font-size: 3rem;
+  font-size: 3em;
+  margin: 0 20%;
 }
 
 /* "points" class to color the question boxes */
@@ -225,5 +229,5 @@ img {
   color: var(--textColor1);
   padding: 5px 10px;
   font-family: "Delicious Handrawn", cursive;
-  font-size: 150%;
+  font-size: 2em;
 }
